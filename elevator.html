@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Elevator</title>
+    <script src="elevator.js"></script>
+    <script>
+        var elevator = new Elevator();
+    </script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Floor</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="floor_4">
+                    <td>4</td>
+                    <td>
+                        <input type="button" onclick="elevator.setFloor(4);" value="call">
+
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(0);" value="0" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(1);" value="1" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(2);" value="2" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(3);" value="3" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(4);" value="4" disabled="disabled">
+                    </td>
+                </tr>
+                <tr class="floor_3">
+                    <td>3</td>
+                    <td>
+                        <input type="button" onclick="elevator.setFloor(3);" value="call">
+
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(0);" value="0" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(1);" value="1" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(2);" value="2" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(3);" value="3" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(4);" value="4" disabled="disabled">
+                    </td>
+                </tr>
+                <tr class="floor_2">
+                    <td>2</td>
+                    <td>
+                        <input type="button" onclick="elevator.setFloor(2);" value="call">
+
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(0);" value="0" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(1);" value="1" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(2);" value="2" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(3);" value="3" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(4);" value="4" disabled="disabled">
+                    </td>
+                </tr>
+                <tr class="floor_1">
+                    <td>1</td>
+                    <td>
+                        <input type="button" onclick="elevator.setFloor(1);" value="call">
+
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(0);" value="0" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(1);" value="1" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(2);" value="2" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(3);" value="3" disabled="disabled">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(4);" value="4" disabled="disabled">
+                    </td>
+                </tr>
+                <tr class="floor_0">
+                    <td style="background-color: yellow;">0</td>
+                    <td>
+                        <input type="button" onclick="elevator.setFloor(0);" value="call">
+
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(0);" value="0">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(1);" value="1">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(2);" value="2">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(3);" value="3">
+                        <input type="button" class="floor_action" onclick="elevator.setFloor(4);" value="4">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
